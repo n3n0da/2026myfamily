@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Год семьи 2026 - Сохранение семейных ценностей в Вологодской области</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Фиксированная шапка -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#home" class="logo">
+                <img src="images/logo.png" alt="Логотип Год семьи 2024" class="logo-img">
+                <div class="logo-text">
+                    <span>Год семьи 2026</span>
+                    <span class="logo-subtitle">Традиционные семейные ценности в Вологодской области</span>
+                </div>
+            </a>
+            
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Главная</a></li>
+                    <li><a href="#initiatives" class="nav-link">Инициативы</a></li>
+                    <li><a href="#events" class="nav-link">Мероприятия</a></li>
+                    <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <div class="contacts-header">
+                <a href="tel:+78001234567"><i class="fas fa-phone"></i> 8 (800) 123-45-67</a>
+                <a href="mailto:family2024@region.ru"><i class="fas fa-envelope"></i> family2026@region.ru</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Первый экран - Слайдер -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="slider-container">
+                <div class="slider" id="slider">
+                    <div class="slide slide-active" style="background-image: url('images/slide1.jpg');">
+                        <div class="slide-overlay"></div>
+                        <div class="slide-content">
+                            <h1>Год семьи 2026</h1>
+                            <p>Сохраняем и укрепляем традиционные семейные ценности. Присоединяйтесь к нашим инициативам и мероприятиям!</p>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('images/slide2.jpg');">
+                        <div class="slide-overlay"></div>
+                        <div class="slide-content">
+                            <h1>Поддержка семей</h1>
+                            <p>Программы поддержки молодых и многодетных семей, социальные гарантии и помощь в трудной ситуации.</p>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('images/slide3.jpg');">
+                        <div class="slide-overlay"></div>
+                        <div class="slide-content">
+                            <h1>Образовательные программы</h1>
+                            <p>Семинары, консультации и курсы для родителей по вопросам воспитания, здоровья и развития детей.</p>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('images/slide4.jpg');">
+                        <div class="slide-overlay"></div>
+                        <div class="slide-content">
+                            <h1>Семейный досуг</h1>
+                            <p>Организация культурных и спортивных мероприятий для всей семьи, укрепляющих отношения между поколениями.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-nav">
+                    <button class="slider-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                
+                <div class="slider-dots" id="sliderDots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Второй экран - Инициативы -->
+    <section class="initiatives" id="initiatives">
+        <div class="container">
+            <div class="section-title">
+                <h2>Приоритетные инициативы региона</h2>
+                <p>Основные направления работы по сохранению и защите семейных ценностей</p>
+            </div>
+            
+            <div class="initiatives-grid">
+                <!-- Инициатива 1 -->
+                <div class="initiative-card">
+                    <div class="initiative-img">
+                        <img src="images/initiative1.jpg" alt="Поддержка многодетных семей">
+                    </div>
+                    <div class="initiative-content">
+                        <h3>Поддержка многодетных семей</h3>
+                        <p>Программа материальной и социальной поддержки семей с тремя и более детьми.</p>
+                        <button class="btn-details" data-modal="modal1">Подробнее</button>
+                    </div>
+                </div>
+                
+                <!-- Инициатива 2 -->
+                <div class="initiative-card">
+                    <div class="initiative-img">
+                        <img src="images/initiative2.jpg" alt="Семейная ипотека">
+                    </div>
+                    <div class="initiative-content">
+                        <h3>Семейная ипотека</h3>
+                        <p>Льготные условия кредитования для молодых семей на приобретение жилья.</p>
+                        <button class="btn-details" data-modal="modal2">Подробнее</button>
+                    </div>
+                </div>
+                
+                <!-- Инициатива 3 -->
+                <div class="initiative-card">
+                    <div class="initiative-img">
+                        <img src="images/initiative3.jpg" alt="Образование для родителей">
+                    </div>
+                    <div class="initiative-content">
+                        <h3>Образование для родителей</h3>
+                        <p>Бесплатные курсы и семинары по вопросам воспитания и развития детей.</p>
+                        <button class="btn-details" data-modal="modal3">Подробнее</button>
+                    </div>
+                </div>
+                
+                <!-- Инициатива 4 -->
+                <div class="initiative-card">
+                    <div class="initiative-img">
+                        <img src="images/initiative4.jpg" alt="Детские сады и ясли">
+                    </div>
+                    <div class="initiative-content">
+                        <h3>Детские сады и ясли</h3>
+                        <p>Строительство новых дошкольных учреждений и увеличение доступных мест.</p>
+                        <button class="btn-details" data-modal="modal4">Подробнее</button>
+                    </div>
+                </div>
+                
+                <!-- Инициатива 5 -->
+                <div class="initiative-card">
+                    <div class="initiative-img">
+                        <img src="images/initiative5.jpg" alt="Здоровье семьи">
+                    </div>
+                    <div class="initiative-content">
+                        <h3>Здоровье семьи</h3>
+                        <p>Программы медицинского сопровождения и профилактики для всех членов семьи.</p>
+                        <button class="btn-details" data-modal="modal5">Подробнее</button>
+                    </div>
+                </div>
+                
+                <!-- Инициатива 6 -->
+                <div class="initiative-card">
+                    <div class="initiative-img">
+                        <img src="images/initiative6.jpg" alt="Семейный досуг">
+                    </div>
+                    <div class="initiative-content">
+                        <h3>Семейный досуг</h3>
+                        <p>Организация культурных и спортивных мероприятий (поход) для совместного отдыха.</p>
+                        <button class="btn-details" data-modal="modal6">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Третий экран - Мероприятия -->
+    <section class="events" id="events">
+        <div class="container">
+            <div class="section-title">
+                <h2>Запланированные мероприятия</h2>
+                <p>Примите участие в наших событиях и выставках</p>
+            </div>
+            
+            <div class="events-grid">
+                <!-- Мероприятие 1 -->
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="day">15</div>
+                        <div class="month">Марта</div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Фестиваль семейных традиций</h3>
+                        <p>Культурный фестиваль с мастер-классами, выставками и концертной программой для всей семьи.</p>
+                        <button class="btn-register" data-event="Фестиваль семейных традиций">Регистрация</button>
+                    </div>
+                </div>
+                
+                <!-- Мероприятие 2 -->
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="day">22</div>
+                        <div class="month">Апреля</div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Семинар для родителей</h3>
+                        <p>Экспертные лекции и практические занятия по современным методикам воспитания детей.</p>
+                        <button class="btn-register" data-event="Семинар для родителей">Регистрация</button>
+                    </div>
+                </div>
+                
+                <!-- Мероприятие 3 -->
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="day">10</div>
+                        <div class="month">Май</div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Спортивный семейный день</h3>
+                        <p>Соревнования и активности для детей и родителей на свежем воздухе в городском парке.</p>
+                        <button class="btn-register" data-event="Спортивный семейный день">Регистрация</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Четвертый экран - Футер -->
+    <footer id="contacts">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home">Год семьи 2026</a>
+                    <p>Сохраняя традиционные семейные ценности для будущих поколений.</p>
+                    <div class="social-links">
+                        <a href="#" title="ВКонтакте"><i class="fab fa-vk"></i></a>
+                        <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" title="Одноклассники"><i class="fab fa-odnoklassniki"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#initiatives">Инициативы</a></li>
+                        <li><a href="#events">Мероприятия</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Вологда, ул. Мира, д. 5</p>
+                    <p><i class="fas fa-phone"></i> 8 (800) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> family2026@region.ru</p>
+                    <p><i class="fas fa-clock"></i> Пн-Пт: 9:00-18:00</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Год семьи. Все права защищены. Порошин Д.Р. Пестерев А.С.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Модальные окна для инициатив -->
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Поддержка многодетных семей</h3>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>Программа включает ежемесячные пособия, льготы на оплату ЖКХ, бесплатный проезд для детей в общественном транспорте и первоочередное предоставление мест в детских садах.</p>
+                <p>Также предусмотрены налоговые льготы для родителей и специальные условия для получения земельных участков под строительство жилья.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Семейная ипотека</h3>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>Льготная ипотека предоставляется молодым семьям (возраст супругов до 35 лет) под сниженную процентную ставку. Первоначальный взнос может быть частично оплачен из регионального бюджета.</p>
+                <p>Программа действует на приобретение как первичного, так и вторичного жилья в пределах региона.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Образование для родителей</h3>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>Бесплатные курсы проводят психологи, педагоги и медицинские работники. Темы включают возрастную психологию, здоровое питание детей, безопасность в интернете и разрешение конфликтных ситуаций.</p>
+                <p>Занятия проходят в очном и онлайн-формате, с возможностью индивидуальных консультаций.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal4">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Детские сады и ясли</h3>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>В течение 2026 года планируется построить 10 новых детских садов и открыть дополнительные группы в существующих учреждениях. Особое внимание уделяется созданию ясельных групп для детей от 1,5 лет.</p>
+                <p>Все новые сады будут оборудованы современными системами безопасности и развивающими площадками.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal5">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Здоровье семьи</h3>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>Программа включает ежегодные профилактические осмотры для всех членов семьи, льготное санаторно-курортное лечение и консультации специалистов по здоровому образу жизни.</p>
+                <p>Также организованы выездные медицинские бригады для жителей отдаленных районов региона.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal6">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Семейный досуг</h3>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>В рамках программы организуются ежемесячные культурные и спортивные мероприятия: семейные кинопоказы, театральные постановки, мастер-классы, спортивные соревнования и экскурсии.</p>
+                <p>Многие мероприятия проводятся бесплатно или по льготным ценам для многодетных семей.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для регистрации -->
+    <div class="modal" id="registrationModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Регистрация на мероприятие</h3>
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="fullName">ФИО *</label>
+                        <input type="text" id="fullName" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Электронная почта *</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон *</label>
+                        <input type="tel" id="phone" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Форма участия *</label>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="offline" name="participation" value="offline" checked>
+                                <label for="offline">Очно</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="online" name="participation" value="online">
+                                <label for="online">Онлайн</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="eventDate">Дата мероприятия</label>
+                        <input type="text" id="eventDate" class="form-control" readonly>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="eventName">Название мероприятия</label>
+                        <input type="text" id="eventName" class="form-control" readonly>
+                    </div>
+                    
+                    <div class="form-buttons">
+                        <button type="button" class="btn btn-secondary" id="clearForm">Очистить форму</button>
+                        <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+                        <button type="button" class="btn btn-close close-modal">Закрыть</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
